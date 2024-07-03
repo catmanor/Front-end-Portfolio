@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/project.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap" rel="stylesheet">
+    <script src="js/processing.js"></script>
+</head>
+
+<body>
+    <section class="phone-layout">
+
+        <div class="layout-items grid">
+            <div class="grid-col-1of5 time"><p>12:00</p></div>
+            <div class="grid-col-3of5 camera-part"></div>
+            <div class="grid-col-1of5 icons grid">
+                    <div class="signal grid-col-1of3">
+                        <img src="img/internet.png" alt="1">
+                    </div>
+                    <div class="wifi grid-col-1of3">
+                        <img src="img/wifi.png" alt="2">
+                    </div>
+                    <div class="battery grid-col-1of3">
+                        <img src="img/battery1.png" alt="3">
+                    </div>                          
+            </div>
+        </div>
+                
+        <div class="decoration"></div>
+        <div class="dot"></div>
+
+
+        <!-- Start of Project section -->
+        <section class="project-detail-section">
+            <section class="project-intro">
+                <div class="align-center">
+                    <h1>Project - Alien</h1>
+                </div>
+                <ul>
+                    <li class="list-bold">Introduction:</li>
+                    <li class="border-bottom-line">‘Alien’ is a two-dimension game for users to use mouse as their weapon to kill the aliens. The goal of the game is to make the content and drawing can be associated tightly.</li>
+                    <li class="list-bold">Role:</li>
+                    <li class="border-bottom-line">designer and developer</li>
+                    <li class="list-bold">Teammate:</li>
+                    <li class="border-bottom-line">Me</li>
+                    <li class="list-bold">Project scope:</li>
+                    <li class="border-bottom-line">3-week student project</li>
+                    <li class="list-bold">Tool:</li>
+                    <li class="border-bottom-line">Processing</li>
+                </ul>
+            </section> 
+
+            <section class="project-process">
+                <div>
+                    <h2>Research:</h2>
+                    <p>Since the project should be designed by ourselves, my first research is to look for graphic works online to get my inspiration. After a series of comparison and filtrating, a moon graph become my blueprint.
+                        The second research was after the draft sketching and all the research is in processing.org website.  Since some special graphics and curves were not taught in class, and they were necessary for my design, I did those second researches.
+                    </p>
+                    <!-- https://qz.com/1577156/pictures-of-the-super-worm-moon-the-last-one-of-2019/ -->
+                    <img src="img/moon.jpg" alt="research image">
+                </div>
+
+                <div>
+                    <h2>Draft Sketch:</h2>
+                    <p>
+                        Only the moon blueprint is too simple to construct a completed background so I added some elements of my hometown. 
+    After that, I got a sudden idea because of the movie ‘Prometheus’, and decided to produce the scenes of alien invasion of earth. Therefore, the character was determined.
+                    </p>
+                    <img src="img/alien-sketch.jpg" alt="draft sktech image">
+                </div>
+
+                <div>
+                    <h2>Coding and testing:</h2>
+                    <p>
+                        Since the unfamiliarity with Processing, my coding process is not that smooth. When I met the trouble I didn’t know how to solve, I would look for the answers from processing websites or online tutorial videos. And then, I would change and test them in my own code. I think it’s a good method to work out most of problems, not only in Processing. 
+                    </p>
+                    <img src="img/alien-coding.png" alt="coding & testing image">
+                </div>
+
+                <div>
+                    <h2>Final Results:</h2>
+                    <p>
+                        The final result is to mix the work of background and alien together, and then add some special effect as my own bonus. 
+                        (Please use prepros open the html, I embed a processing program into my page, but it seems not work if just click index.html)
+                    </p>
+                    <!-- Tutorial coms from https://www.youtube.com/watch?v=QMwbghhOEtM -->
+                    <canvas data-processing-sources="js/AlienGame.pde"></canvas>
+                    <img src="img/project1.png" alt="final project image">
+                </div>
+
+                <div>
+                    <h2>Challenge: </h2>
+                    <p>
+                        That was my first experience with Processing. Before that,  I only learned a little bit Python, and the experience of Python didn’t give me too much help on that project. Many ideas in my mind were prevented from a variety of technical problems. Therefore, I try my best to achieve the effect what I could do that time. During the process, I also met several problems caused by unfamiliarity with Processing. Since that, this experience became my motivation to learn more languages and computing skills later. 
+                    </p>
+                </div>
+            </section>
+        </section>
+        <!-- End of Project section --> 
+
+
+        <div onclick="backHome()" class="back-area">
+            <span>Go back</span>
+            <div class="back-bar"></div>
+        </div>
+        
+        <script>
+            function backHome() {
+                window.location = "index.html";
+            }
+        </script>
+    </section>
+
+</body>
+
+</html>

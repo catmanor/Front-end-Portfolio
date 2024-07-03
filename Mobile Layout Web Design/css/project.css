@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(245, 245, 245);
+    font-weight: lighter;
+}
+
+h1, h2, p {
+    color: #5a5a5a;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-left {
+    text-align: left;
+}
+
+
+/* Styling for the project detail section */
+.project-detail-section {
+    margin: 10rem;
+}
+
+.project-intro {
+    margin-bottom: 5rem;
+}
+
+.project-process {
+    width: 100%;
+    height: 100%;
+}
+
+.project-process div {
+    margin-bottom: 3rem;
+    width: 100%;
+    height: 100%;
+}
+
+.project-process img {
+    width: 100%;
+    height: auto;
+}
+
+.project-process canvas {
+    width: 100%;
+    height: auto;
+}
+
+ul {
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 1rem solid #5a5a5a;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+li {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style: none;
+    padding-bottom: 1rem;
+}
+
+li.border-bottom-line {
+    border-bottom: 0.15rem solid #959DA5;
+}
+
+li.list-bold {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #5a5a5a;
+}
+
+
+/* Styling for responsive */
+@media (max-width: 70em) {
+    .signal img, .wifi img, .battery img {
+        width: 2rem;
+        height: auto;
+        padding: 0;
+        padding-top: 1rem;
+    }
+
+    .decoration {
+        /* width: 10rem; */
+        width: 20%;
+        height: 2rem;
+        top: 1rem;
+        left: 37%;
+    }
+
+    .dot {
+        width: 4.5%;
+        height: 2rem;
+        top: 1rem;
+        left: 60%;
+    }
+
+    ul {
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 1rem;
+        padding: 1rem;
+    }
+    
+    li {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        list-style: none;
+        padding-bottom: 1rem;
+    }
+}
+
+
+@media (max-width: 45em) {
+    .phone-layout {
+        border: none;
+    }
+
+    .layout-items, .decoration, .dot {
+        display: none;
+    }
+
+    .project-detail-section {
+        margin: 2rem;
+    }
+
+    ul {
+        border: 0.5rem solid #5a5a5a;
+    }
+}
+
+@media (max-width: 31em) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .project-detail-section {
+        margin: 0;
+    }
+
+    ul {
+        margin-left: 1%;
+        margin-right: 1%;
+        border-radius: 1rem;
+        padding: 0.5rem;
+    }
+    
+    li {
+        margin-top: 0.75rem;
+        margin-bottom: 0.75rem;
+        list-style: none;
+        padding-bottom: 1rem;
+        font-size: 0.75rem;
+    }
+    
+    li.list-bold {
+        font-weight: 500;
+        font-size: 1rem;
+        color: #5a5a5a;
+    }
+}
